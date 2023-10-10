@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">Home Page</h1>
+      <h1 className="text-2xl font-bold text-center my-4">Home Page</h1>
       <div>
         {displayedPosts.map((post) => (
           <Post key={post.id} post={post}></Post>

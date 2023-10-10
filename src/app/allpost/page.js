@@ -7,7 +7,7 @@ const AllPost = async () => {
   const allPost = await getPosts();
   console.log(allPost.length);
   return (
-    <div>
+    <div className="my-4">
       <AddPost></AddPost>
       <div>
         {allPost.map((post) => (
