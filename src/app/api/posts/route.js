@@ -6,11 +6,13 @@ import { NextResponse } from "next/server";
 export const POST = async (request) => {
   try {
     const body = await request.json();
-    const { title, content, category } = body;
+    const { title, content, content_details, image, category } = body;
     const newInfo = await prisma.post.create({
       data: {
         title,
         content,
+        content_details,
+        image,
         category,
       },
     });

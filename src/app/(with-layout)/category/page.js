@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Post from "../components/post";
-import { getPosts } from "../utils/getposts";
+import Post from "@/app/components/post";
+import { getPosts } from "@/app/utils/getposts";
+import { useEffect, useState } from "react";
 
 const Category = () => {
   const [allPost, setAllPost] = useState([]);
